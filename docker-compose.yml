@@ -19,7 +19,7 @@ services:
       - .:/app
     ports:
       - "8501:8501"
-    command: streamlit run student_app.py --server.address 0.0.0.0 --server.port 8501
+    command: streamlit run visual_demo.py --server.address 0.0.0.0 --server.port 8501
     
   hopfield-benchmark:
     build: .
