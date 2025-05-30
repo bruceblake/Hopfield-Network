@@ -1,0 +1,55 @@
+
+Collecting usage statistics. To deactivate, set browser.gatherUsageStats to false.
+
+
+  You can now view your Streamlit app in your browser.
+
+  Local URL: http://localhost:8501
+  Network URL: http://172.24.41.178:8501
+  External URL: http://149.22.84.153:8501
+
+2025-05-29 22:06:55.868 Uncaught app execution
+Traceback (most recent call last):
+  File "/home/proxyie/MySoftware/Hopfield-Network/venv/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 121, in exec_func_with_error_handling
+    result = func()
+  File "/home/proxyie/MySoftware/Hopfield-Network/venv/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 645, in code_to_exec
+    exec(code, module.__dict__)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/proxyie/MySoftware/Hopfield-Network/app.py", line 192, in <module>
+    if cols[j].button("⬜" if st.session_state.current_pattern[i, j] > 0 else "⬛",
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+IndexError: index 5 is out of bounds for axis 1 with size 5
+2025-05-29 22:08:11.814 Uncaught app execution
+Traceback (most recent call last):
+  File "/home/proxyie/MySoftware/Hopfield-Network/venv/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 121, in exec_func_with_error_handling
+    result = func()
+  File "/home/proxyie/MySoftware/Hopfield-Network/venv/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 645, in code_to_exec
+    exec(code, module.__dict__)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/proxyie/MySoftware/Hopfield-Network/app.py", line 192, in <module>
+    if cols[j].button("⬜" if st.session_state.current_pattern[i, j] > 0 else "⬛",
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+IndexError: index 5 is out of bounds for axis 1 with size 5
+2025-05-29 22:08:12.608 Uncaught app execution
+Traceback (most recent call last):
+  File "/home/proxyie/MySoftware/Hopfield-Network/venv/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 121, in exec_func_with_error_handling
+    result = func()
+  File "/home/proxyie/MySoftware/Hopfield-Network/venv/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 645, in code_to_exec
+    exec(code, module.__dict__)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/proxyie/MySoftware/Hopfield-Network/app.py", line 192, in <module>
+    if cols[j].button("⬜" if st.session_state.current_pattern[i, j] > 0 else "⬛",
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+IndexError: index 5 is out of bounds for axis 1 with size 5
+2025-05-29 22:08:15.852 Uncaught app execution
+Traceback (most recent call last):
+  File "/home/proxyie/MySoftware/Hopfield-Network/venv/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/exec_code.py", line 121, in exec_func_with_error_handling
+    result = func()
+  File "/home/proxyie/MySoftware/Hopfield-Network/venv/lib/python3.13/site-packages/streamlit/runtime/scriptrunner/script_runner.py", line 645, in code_to_exec
+    exec(code, module.__dict__)
+    ~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/proxyie/MySoftware/Hopfield-Network/app.py", line 192, in <module>
+    if cols[j].button("⬜" if st.session_state.current_pattern[i, j] > 0 else "⬛",
+                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^
+IndexError: index 5 is out of bounds for axis 1 with size 5
+  Stopping...

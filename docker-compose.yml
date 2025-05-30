@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  hopfield-toolkit:
+    build: .
+    container_name: hopfield-toolkit
+    volumes:
+      - .:/app
+      - ./data:/app/data
+      - ./results:/app/results
+    environment:
+      - PYTHONPATH=/app
+    command: python -m pytest tests/ -v --cov=. --cov-report=html
+    
+  hopfield-demo:
+    build: .
+    container_name: hopfield-demo
+    volumes:
+      - .:/app
+    ports:
+      - "8501:8501"
+    command: streamlit run student_app.py --server.address 0.0.0.0 --server.port 8501
+    
+  hopfield-benchmark:
+    build: .
+    container_name: hopfield-benchmark
+    volumes:
+      - .:/app
+      - ./benchmark_results:/app/benchmark_results
+    command: python benchmark.py --save-results
